@@ -10,9 +10,6 @@ import ru.lucky_book.R;
  */
 public enum PageTemplate {
     SINGLE(R.layout.template_0, 1, 1);
-    //TWO_HORIZONTAL(R.layout.template_1, 2, 1),
-    //TWO_VERTICAL(R.layout.template_2, 1, 2),
-    //FOUR(R.layout.template_3, 2, 2);
 
     @LayoutRes
     private int layoutResId;

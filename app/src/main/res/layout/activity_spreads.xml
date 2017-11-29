@@ -68,41 +68,34 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
-            android:paddingBottom="@dimen/twice_view_margin">
+            android:paddingBottom="5dp">
+
 
             <TextView
                 android:id="@+id/swap_pages_button"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="-10dp"
                 android:layout_marginEnd="@dimen/view_margin"
                 android:layout_marginStart="@dimen/view_margin"
                 android:layout_marginTop="@dimen/view_margin"
-                android:layout_weight="1"
-                android:background="?attr/selectableItemBackground"
+                android:layout_marginLeft="10dp"
                 android:drawablePadding="@dimen/half_view_margin"
-                android:drawableTop="@drawable/action_swap_pages"
-                android:gravity="center"
-                android:onClick="onClick"
+                android:drawableTop="@drawable/add_image"
+                android:padding="5dp"
                 android:textColor="@color/actions_color" />
+
             <TextView
                 android:id="@+id/add_page_button"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/view_margin"
                 android:layout_marginEnd="@dimen/view_margin"
                 android:layout_marginStart="@dimen/view_margin"
                 android:layout_marginTop="@dimen/view_margin"
-                android:paddingLeft="5dp"
-                android:layout_weight="1"
                 android:background="?attr/selectableItemBackground"
                 android:drawablePadding="@dimen/half_view_margin"
-                android:drawableStart="@drawable/action_swap_pages"
-                android:gravity="center"
-                android:onClick="onClick"
-                android:padding="@dimen/half_view_margin"
+                android:drawableTop="@drawable/swap_page1"
+                android:maxLines="1"
+                android:padding="5dp"
                 android:textColor="@color/actions_color" />
 
             <TextView
@@ -114,10 +107,9 @@
                 android:layout_marginTop="@dimen/view_margin"
                 android:background="?attr/selectableItemBackground"
                 android:drawablePadding="@dimen/half_view_margin"
-                android:drawableTop="@drawable/action_delete_bkg"
+                android:drawableTop="@drawable/trash"
                 android:maxLines="1"
                 android:padding="5dp"
-                android:text="@string/delete"
                 android:textColor="@color/actions_color" />
 
         </LinearLayout>

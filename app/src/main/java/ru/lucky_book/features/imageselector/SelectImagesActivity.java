@@ -54,7 +54,7 @@ public class SelectImagesActivity extends AppCompatActivity implements BaseSelec
     public static final int MODE_MULTIPLE = 1;
 
     public static final int DEFAULT_MIN_IMAGE_COUNT = 10;
-    public static final int DEFAULT_MAX_IMAGE_COUNT = 20;
+    public static final int DEFAULT_MAX_IMAGE_COUNT = 30; //от 10 до 30 фоток
     public static int mSelectedId;
     public static String EXTRA_PATHS = "mPaths";
     protected MaterialDialog mLoadingDialog;

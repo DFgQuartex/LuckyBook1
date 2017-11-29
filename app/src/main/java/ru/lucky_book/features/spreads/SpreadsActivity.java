@@ -105,8 +105,6 @@ public class SpreadsActivity extends SpiceActivity implements OnItemClickListene
     //private RecyclerView mTemplatesRecycler;
     private View mAddPageButton;
     private View mDeleteButton;
-    private View mTemplatesButton;
-    private View mFiltersButton;
     private View mSwapPagesButton;
     private RealmAlbum mRealmAlbum;
     private List<Spread> mSpreads;
@@ -194,14 +192,12 @@ public class SpreadsActivity extends SpiceActivity implements OnItemClickListene
         mPagesRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         mActionsHolder = findViewById(R.id.actions_holder);
         mLayoutRoot = (PercentRelativeLayout) findViewById(R.id.rootLayout);
-        //mTemplatesButton = mActionsHolder.findViewById(R.id.template);
         mDeleteButton = mActionsHolder.findViewById(R.id.delete);
         mSwapPagesButton = mActionsHolder.findViewById(R.id.swap_pages_button);
         mAddPageButton = mActionsHolder.findViewById(R.id.add_page_button);
         mLayoutRoot.setOnTouchListener(mOnTouchListener);
         mAddPageButton.setOnClickListener(this);
         mSwapPagesButton.setOnClickListener(this);
-        //mTemplatesButton.setOnClickListener(this);
         mDeleteButton.setOnClickListener(this);
         mLeftPage = (ViewGroup) findViewById(R.id.left_page);
         mRightPage = (ViewGroup) findViewById(R.id.right_page);

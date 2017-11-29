@@ -35,9 +35,9 @@ public class SelectImagesWithSpreadsActivity extends SelectImagesActivity implem
     public static final String EXTRA_PAGE_WIDTH = "page_width";
     public static final String MAX_SPREADS_COUNT = "max_spreads_count";
     public static final String MIN_SPREADS_COUNT = "min_spreads_count";
-    public static final int MIN_SPREADS_COUNT_DEFAULT = 5;
+    public static final int MIN_SPREADS_COUNT_DEFAULT = 5;//было 5
     public static final String SPREADS_RESULT = "spreads_result";
-    public static final int DEFAULT_MAX_SPREADS_COUNT = 10;
+    public static final int DEFAULT_MAX_SPREADS_COUNT = 15;// было 10, пока тест
     public static final int DEFAULT_MAX_IMAGE_COUNT = 20;
     public static final int DEFAULT_MIN_SPREADS_COUNT = 5;
     //  private RecyclerView mSpreadsRecycler;
@@ -129,7 +129,7 @@ public class SelectImagesWithSpreadsActivity extends SelectImagesActivity implem
                 .subscribe(spreads -> {
                     if (spreads.size() < MIN_SPREADS_COUNT_DEFAULT) {
                         UiUtils.showMessageDialog(SelectImagesWithSpreadsActivity.this,
-                                getString(R.string.text_min_spread_count_error, spreads.size(), spreads.size() == 1 ? "" : "a", MIN_SPREADS_COUNT_DEFAULT));
+                                getString(R.string.text_min_spread_count_error, mSpreads.size(), spreads.size() == 1 ? "" : "a", MIN_SPREADS_COUNT_DEFAULT));//mSpreads.size()
                         if (mLoadingDialog != null)
                             mLoadingDialog.dismiss();
                         return;
