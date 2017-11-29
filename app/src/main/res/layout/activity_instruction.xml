@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_instruction_color"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <com.itsronald.widget.ViewPagerIndicator
+            android:id="@+id/indicator_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_vertical"/>
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/root_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_start_button_color"
+        android:elevation="6dp"
+        android:padding="25dp"
+        android:visibility="gone"
+        tools:ignore="UnusedAttribute">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/text_start_create"
+            android:textColor="@android:color/white"
+            android:background="@drawable/circle_background"/>
+    </RelativeLayout>
+</RelativeLayout>

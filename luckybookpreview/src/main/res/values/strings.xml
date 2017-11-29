@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LuckyBookPreview</string>
+    <string name="main_book_activity__create_album_dialog_message">Идет создание альбома</string>
+</resources>

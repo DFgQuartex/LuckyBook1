@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="AppTheme"/>
+
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Fullscreen" parent="AppTheme"/>
+
+    <style name="filter_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="page_button_style" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="toolbar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="order_divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/order_header</item>
+        <item name="android:textColor">@color/order_header_text</item>
+        <item name="android:drawableBottom">@drawable/order_divider_line</item>
+        <item name="android:drawableTop">@drawable/order_divider_line</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="AppTheme.Intro" parent="AppTheme.Fullscreen">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="android:editTextColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="order_label_style">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">@color/order_text</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="order_edit_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/payment_and_delivery_button_background</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.OrderButton" parent="AppTheme.Button">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="AppTheme.AnimDownloadProgressButton">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="progressbtn_background_color">@color/colorButtonPressed</item>
+        <item name="progressbtn_background_second_color">@color/colorAccent</item>
+        <item name="progressbtn_text_color">@android:color/white</item>
+        <item name="progressbtn_text_covercolor">@android:color/white</item>
+    </style>
+
+    <style name="AlbumListText">
+        <item name="android:textSize">@dimen/album_list_text_size</item>
+        <item name="android:textColor">@color/album_list_text_color</item>
+    </style>
+
+    <style name="PrimaryTextStyle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+</resources>

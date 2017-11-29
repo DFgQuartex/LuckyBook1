@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#e3e3e3</color>
+    <color name="colorAccent">#06bef3</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorButtonPressed">#303F9F</color>
+    <color name="colorButton">#3F51B5</color>
+    <color name="colorSwitch">#CCCCCC</color>
+    <color name="primaryTextColor" >#FF000000</color>
+    <color name="album_list_text_color" >#FFFFFF</color>
+
+    <color name="cost">#333333</color>
+    <color name="order_header">#f7f7f8</color>
+    <color name="order_header_text">#7c7c7c</color>
+    <color name="order_text">#4e4e4e</color>
+    <color name="post_name">#1c1c1c</color>
+
+    <!--doing this is really bad, but this's the way om.victor:lib works...-->
+    <color name="book_loading_book">@color/colorAccent</color>
+    <color name="red">#F44336</color>
+    <color name="yellow">#FDD835</color>
+    <string name="social_net_auth_with">Войти в</string>
+    <string name="social_net_auth_with_vk">Войти в vk</string>
+    <string name="social_net_auth_with_fb">Войти в Facebook</string>
+
+    <color name="spreads_background">#aaaaaa</color>
+    <color name="background_instruction_color">#01aae8</color>
+    <color name="start_button_color">#1956f0</color>
+    <color name="background_start_button_color">#edffffff</color>
+    <color name="colot_text_instruction_item_label">#ffffff</color>
+    <color name="color_placeholder_photo">#edecec</color>
+</resources>

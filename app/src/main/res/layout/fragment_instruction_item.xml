@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_instruction_color">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/label_tv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="@color/colot_text_instruction_item_label"
+            android:text="Загружайте фотографии из\nгалереи или социальных сетей"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="19sp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center" />
+    <ImageView
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label_tv" />
+</RelativeLayout>

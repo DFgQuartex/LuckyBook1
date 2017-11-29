@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:padding="@dimen/half_view_margin"
+    android:gravity="center"
+    android:clickable="true"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/selection_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/selected_image_selector">
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/page_holder"
+            android:layout_width="@dimen/preview_width"
+            android:layout_height="@dimen/preview_height"
+            app:layout_aspectRatio="200%"
+            app:layout_widthPercent="90%">
+
+            <FrameLayout
+                android:id="@+id/left_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                app:layout_widthPercent="50%" />
+
+            <FrameLayout
+                android:id="@+id/right_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:layout_widthPercent="50%" />
+
+            <ImageView
+                android:id="@+id/page_divider_mid"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/page_divider" />
+
+        </android.support.percent.PercentRelativeLayout>
+    </FrameLayout>
+    <TextView
+        android:layout_marginTop="@dimen/half_view_margin"
+        android:id="@+id/pages_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

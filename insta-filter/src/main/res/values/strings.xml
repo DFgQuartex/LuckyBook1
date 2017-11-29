@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_ifnormalfilter">Normal</string>
+    <string name="filter_if1977filter">1977</string>
+    <string name="filter_ifamarofilter">Amaro</string>
+    <string name="filter_ifbrannanfilter">Brannan</string>
+    <string name="filter_ifearlybirdfilter">EarlyBird</string>
+    <string name="filter_ifhefefilter">Hefe</string>
+    <string name="filter_ifhudsonfilter">Hudson</string>
+    <string name="filter_ifinkwellfilter">Inkwell</string>
+    <string name="filter_iflomofifilter">Lomofi</string>
+    <string name="filter_iflordkelvinfilter">Lord Kelvin</string>
+    <string name="filter_ifnashvillefilter">Nashville</string>
+    <string name="filter_ifrisefilter">Rise</string>
+    <string name="filter_ifsierrafilter">Sierra</string>
+    <string name="filter_ifsutrofilter">Sutro</string>
+    <string name="filter_iftoasterfilter">Toaster</string>
+    <string name="filter_ifvalenciafilter">Valencia</string>
+    <string name="filter_ifwaldenfilter">Walder</string>
+    <string name="filter_ifxproiifilter">X-Pro II</string>
+</resources>

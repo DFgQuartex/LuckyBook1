@@ -1,0 +1,1 @@
+include ':app', ':insta-filter', ':luckybookpreview', ':rmswitch', ':materialdatetimepicker', ':ucrop'

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_instruction_color">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/label_tv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="@color/colot_text_instruction_item_label"
+        android:text="Получи фотокнигу в почтовом\nотделении либо курьером"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="19sp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center" />
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:src="@drawable/image_8"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:layout_below="@+id/label_tv"
+        android:layout_above="@+id/label_tv2"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/label_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colot_text_instruction_item_label"
+        android:text="— 20 x 20 см\n— панорамные страницы\n— твердая обложка\n— качественная печать"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="19sp"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textStart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

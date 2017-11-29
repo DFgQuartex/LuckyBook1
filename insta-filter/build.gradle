@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig{
+        minSdkVersion 8
+        targetSdkVersion 23
+
+        ndk {
+            moduleName "insta-filter-library"
+            stl "gnustl_shared"
+            abiFilters "all"
+            ldLibs "log"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    compile project(':gpuimage')
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+}
+

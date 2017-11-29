@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/half_view_margin">
+
+
+    <me.nereo.multi_image_selector.view.SquareFrameLayout
+        android:foreground="@drawable/selected_image_selector"
+        android:id="@+id/selection_holder"
+        android:layout_width="@dimen/preview_height"
+        android:layout_height="@dimen/preview_height"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/half_view_margin"
+        android:id="@+id/template_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

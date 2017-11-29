@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_instruction_color"
+              android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/image_1"/>
+
+    <TextView
+        android:id="@+id/label_tv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Загружайте фотографии из\nгалереи или социальных сетей"
+        android:textAlignment="center"
+        android:textColor="@color/colot_text_instruction_item_label"
+        android:textSize="19sp"/>
+</LinearLayout>

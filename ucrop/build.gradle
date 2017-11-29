@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 22
+        versionName "2.2.0-native"
+        generatedDensities = []
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    // This is handled for you by the 2.0+ Gradle Plugin
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    resourcePrefix 'ucrop_'
+
+    sourceSets.main {
+        jni.srcDirs = [];
+    }
+}
+
+dependencies {
+    compile "com.android.support:appcompat-v7:${google_support_version}"
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+}

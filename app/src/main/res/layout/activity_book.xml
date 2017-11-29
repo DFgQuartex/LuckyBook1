@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar_style"
+        android:elevation="@dimen/page_toolbar_elevation" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bottom_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentBottom="true"
+        android:background="#aaaaaa"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_recycler_view"
+        android:layout_below="@id/toolbar"
+        android:background="#ffffff"
+        android:elevation="@dimen/page_sheet_layout_elevation">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/book_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#FFFFFF"
+            android:elevation="@dimen/page_book_elevation"
+            app:layout_aspectRatio="200%"
+            app:layout_widthPercent="91%">
+
+
+            <RelativeLayout
+                android:id="@+id/both_pages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+
+
+            <ImageView
+                android:id="@+id/page_divider_mid"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/page_divider" />
+
+            <RelativeLayout
+                android:id="@+id/left_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/page_divider_mid"
+                android:background="#FFFFFF"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/right_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/page_divider_mid"
+                android:background="#FFFFFF"
+                android:visibility="gone"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="50%" />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/swap_pages_button"
+                    style="@style/page_button_style"
+                    android:text="@string/swap_pages" />
+
+                <Button
+                    style="@style/page_button_style"
+                    android:drawableTop="@drawable/ic_background"
+                    android:text="Обрезать" />
+
+                <Button
+                    style="@style/page_button_style"
+                    android:drawableTop="@drawable/ic_filters"
+                    android:text="Фильтры" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/add_page_big_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/add_page_big_button"
+            android:visibility="gone" />
+
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>

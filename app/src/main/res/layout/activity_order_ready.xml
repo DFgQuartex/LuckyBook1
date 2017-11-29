@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_ready_screen_margin"
+            android:gravity="center"
+            android:text="@string/order_ready_title"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/order_ready_title_size"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/ivCover"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/order_ready_screen_margin"/>
+
+        <Button
+            android:id="@+id/new_album"
+            style="@style/AppTheme.Button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_ready_screen_margin"
+            android:background="@drawable/circle_background"
+            android:text="@string/new_album"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/to_album_list"
+            style="@style/AppTheme.Button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twice_view_margin"
+            android:background="@drawable/circle_background"
+            android:text="@string/to_album_list"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_info"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/view_margin"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:textColor="@color/colorTextPrimary"/>
+    </LinearLayout>
+</ScrollView>

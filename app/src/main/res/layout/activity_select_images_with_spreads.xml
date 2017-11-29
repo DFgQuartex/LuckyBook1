@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ru.lucky_book.features.imageselector.SelectImagesActivity">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginBottom="@dimen/view_margin"
+                    android:layout_marginEnd="@dimen/twice_view_margin"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:background="@drawable/mis_action_btn"
+                    android:paddingEnd="@dimen/view_margin"
+                    android:paddingStart="@dimen/view_margin"
+                    android:textColor="@color/mis_default_text_color"
+                    android:textSize="14sp" />
+
+            </android.support.v7.widget.Toolbar>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/text_multiselect_images1"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <ImageView
+                    android:id="@+id/marker"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_warning_white_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="2dp"
+                    android:text="@string/text_multiselect_images2"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bottom_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_recycler_height"
+        android:background="@color/spreads_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+</LinearLayout>

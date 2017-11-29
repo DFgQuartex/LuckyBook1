@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 tools:context=".features.order_screen.OrderActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_bar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/order_divider_style"
+                android:layout_marginBottom="@dimen/text_label_margin"
+                android:text="@string/contact_info"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_label_margin"
+                android:layout_marginRight="@dimen/text_label_margin"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/surname_label"
+                        style="@style/order_label_style"
+                        android:text="@string/surname"/>
+
+                    <EditText
+                        android:id="@+id/surname"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/surname_label"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/name_label"
+                        style="@style/order_label_style"
+                        android:text="@string/name"/>
+
+                    <EditText
+                        android:id="@+id/name"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/name_label"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_label_margin"
+                android:layout_marginRight="@dimen/text_label_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/patronymic_label"
+                        style="@style/order_label_style"
+                        android:text="@string/patronymic_label"/>
+
+                    <EditText
+                        android:id="@+id/patronymic"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/patronymic_label"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/birthday_label"
+                        style="@style/order_label_style"
+                        android:text="@string/birthday_label"/>
+
+                    <EditText
+                        android:id="@+id/birthday"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/birthday_label"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="10"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_label_margin"
+                android:layout_marginLeft="@dimen/text_label_margin"
+                android:layout_marginRight="@dimen/text_label_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/phone_label"
+                        style="@style/order_label_style"
+                        android:text="@string/phone_label"/>
+
+                    <com.github.pinball83.maskededittext.MaskedEditText
+                        android:id="@+id/phone"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/phone_label"
+                        android:inputType="number"
+                        app:mask="+7**********"
+                        app:notMaskedSymbol="*"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/email_label"
+                        style="@style/order_label_style"
+                        android:text="@string/email_label"/>
+
+                    <EditText
+                        android:id="@+id/email"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/email_label"
+                        android:inputType="textEmailAddress"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/order_divider_style"
+                android:layout_marginBottom="@dimen/text_label_margin"
+                android:text="@string/delivery_address"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_label_margin"
+                android:layout_marginRight="@dimen/text_label_margin"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/city_label"
+                        style="@style/order_label_style"
+                        android:text="@string/city_label"/>
+
+                    <EditText
+                        android:id="@+id/city"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/city_label"
+                        android:inputType="textCapWords"
+                        android:maxLength="50"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/street_label"
+                        style="@style/order_label_style"
+                        android:text="@string/street_label"/>
+
+                    <EditText
+                        android:id="@+id/street"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/street_label"
+                        android:inputType="textCapWords"
+                        android:maxLength="50"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_label_margin"
+                android:layout_marginRight="@dimen/text_label_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/house_label"
+                        style="@style/order_label_style"
+                        android:text="@string/house_label"/>
+
+                    <EditText
+                        android:id="@+id/house"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/house_label"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="10"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/flat_label"
+                        style="@style/order_label_style"
+                        android:text="@string/flat_label"/>
+
+                    <EditText
+                        android:id="@+id/flat"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/flat_label"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="10"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_label_margin"
+                android:layout_marginLeft="@dimen/text_label_margin"
+                android:layout_marginRight="@dimen/text_label_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/zip_label"
+                        style="@style/order_label_style"
+                        android:text="@string/zip_label"/>
+
+                    <EditText
+                        android:id="@+id/zip"
+                        style="@style/order_edit_text_style"
+                        android:layout_below="@id/zip_label"
+                        android:inputType="number"
+                        android:maxLength="6"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/order_divider_style"
+                android:layout_marginBottom="@dimen/text_label_margin"
+                android:text="@string/delivery_way"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_label_margin"
+                android:orientation="vertical">
+
+                <com.rm.rmswitch.RMSwitch
+                    android:id="@+id/delivery_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:forceAspectRatio="false"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/russia_post"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/switch_text_margin"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/app_name"
+                            android:textColor="@color/post_name"
+                            android:textSize="@dimen/label_text_size"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/switch_text_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="СПСР Экспресс"
+                            android:textColor="@color/post_name"
+                            android:textSize="@dimen/label_text_size"
+                            android:textStyle="normal|bold"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ProgressBar
+                                android:id="@+id/progressBarSpsr"
+                                android:visibility="gone"
+                                style="?android:attr/progressBarStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/spsr_post"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/switch_text_margin"
+                                android:gravity="center"
+                                android:text="@string/app_name"
+                                android:textColor="@color/post_name"
+                                android:textSize="@dimen/label_text_size"
+                                android:textStyle="normal|bold"/>
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="(до 7 дней)"
+                            android:textColor="@color/post_name"
+                            android:textSize="@dimen/label_text_size"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/order_divider_style"
+                android:layout_marginBottom="@dimen/text_label_margin"
+                android:text="@string/total"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_label"
+                    android:textSize="@dimen/label_text_size"/>
+
+                <TextView
+                    android:id="@+id/total_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_label_margin"
+                    android:maxLines="1"
+                    android:text="@string/total_cost_sample"
+                    android:textColor="@color/cost"
+                    android:textSize="@dimen/double_label_text_size"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/cost_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_label_margin"
+                    android:textSize="@dimen/label_text_size"
+                    android:textAlignment="center"/>
+
+                <com.xiaochen.progressroundbutton.AnimDownloadProgressButton
+                    android:id="@+id/pay_by_card"
+                    style="@style/AppTheme.AnimDownloadProgressButton"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/text_label_margin"
+                    app:progressbtn_text="@string/pay_by_card"/>
+
+
+                <com.xiaochen.progressroundbutton.AnimDownloadProgressButton
+                    android:id="@+id/upload_progress"
+                    style="@style/AppTheme.AnimDownloadProgressButton"
+                    android:layout_marginBottom="@dimen/text_label_margin"
+                    android:layout_marginTop="@dimen/text_label_margin"
+                    android:focusable="true"
+                    app:progressbtn_text="@string/upload_done"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

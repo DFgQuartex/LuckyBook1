@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.GreetingActivity">
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_1" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <!--
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/twice_view_margin"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/logo" />-->
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/twice_view_margin"
+            android:drawablePadding="@dimen/view_margin"
+            android:drawableTop="@drawable/logo"
+            android:gravity="center_horizontal"
+            android:text="@string/splash_text"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/twice_view_margin"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/create_album"
+                style="@style/AppTheme.Button"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/twice_view_margin"
+                android:background="@drawable/circle_background"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/create_album" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <Button
+                    android:id="@+id/my_albums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawableStart="@drawable/ic_book"
+                    android:fontFamily="sans-serif"
+                    android:onClick="onClick"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/my_albums"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/search_by_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawableStart="@drawable/ic_coupon"
+                    android:onClick="onClick"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/search_by_code"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_tutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_info"
+                android:onClick="onClick"
+                android:text="@string/info"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

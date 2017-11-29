@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/delivery_bkg"
+          android:width="200dp"
+          android:height="200dp"/>
+    <item android:drawable="@drawable/postspsr"
+          android:left="20dp"
+          android:top="50dp"
+          android:bottom="50dp"
+          android:right="20dp"/>
+</layer-list>

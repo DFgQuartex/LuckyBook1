@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+    <LinearLayout
+        android:paddingTop="@dimen/view_margin"
+        android:paddingBottom="@dimen/view_margin"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="@dimen/view_margin"
+            android:id="@+id/cover"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/mis_default_error"
+            android:layout_width="@dimen/mis_folder_cover_size"
+            android:layout_height="@dimen/mis_folder_cover_size" />
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/twice_view_margin"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/path"
+                android:textSize="12sp"
+                android:textColor="#AFAFAF"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/size"
+                android:layout_marginTop="@dimen/half_view_margin"
+                android:textSize="12sp"
+                android:textColor="#AFAFAF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/twice_view_margin"
+            android:src="@drawable/ic_check_white_24dp"
+            android:tint="?attr/colorAccent"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</FrameLayout>

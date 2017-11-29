@@ -1,0 +1,306 @@
+<resources>
+
+    <integer name="com_vk_sdk_AppId">5681339</integer>
+
+    <string name="all_photos_were_too_small">Все картинки были слишком маленькими. Попробуйте выбрать картинки побольше.</string>
+    <string name="app_name">LuckyBook</string>
+    <string name="add_pages_before_exporting">Сначала нужно добавить страницы</string>
+    <string name="app_does_not_work_without_permission">Приложение не работает без разрешения!</string>
+    <string name="write_permission_rationale">Пожалуйста, разрешите приложению доступ к данным. Без него приложение не работает</string>
+    <string name="album_exporting">Экспорт фотокниги…</string>
+    <string name="page_exporting">Экспорт страницы %1$d из %2$d</string>
+    <string name="album_saved_to">Фотокнига сохранёна в %1$s</string>
+    <string name="error_cropping">Error cropping: %1$s</string>
+    <string name="image_too_short">Это слишком низкое изображение.Ваше — %1$d пикселей в высоту. Нужно хотябы %2$d пикселей.</string>
+    <string name="image_too_narrow">Это слишком узкое изображение. Ваше — %1$d пикселей в ширину. Нужно хотябы %2$d пикселей.</string>
+    <string name="choose_other_photo">Выбрать другую фотографию</string>
+    <string name="remove_photo_from_album">Убрать эту фотографию из фотокниги</string>
+    <string name="done">Готово</string>
+    <string name="swap_left">Сдвинуть влево</string>
+    <string name="swap_right">Сдвинуть вправо</string>
+    <string name="add_page">Добавить страницу</string>
+    <string name="remove_page">Удалить</string>
+    <string name="add_page_big_button">Добавить страницу</string>
+    <string name="export_to_png">Экспорт в PNG</string>
+    <string name="preview_album">Просмотр фотокниги</string>
+    <string name="create_album">Создать фотокнигу</string>
+    <string name="swap_pages">Отразить</string>
+    <plurals name="n_photos_were_too_small">
+        <item quantity="one">%1$d фотография были слишком маленькой и не попала в фотокнигу</item>
+        <item quantity="two">%1$d фотографии были слишком маленькими и не попали в фотокнигу</item>
+        <item quantity="few">%1$d фотографии были слишком маленькими и не попали в фотокнигу</item>
+        <item quantity="many">%1$d фотографий были слишком маленькими и не попали в фотокнигу</item>
+        <item quantity="other">%1$d фотографий были слишком маленькими и не попали в фотокнигу</item>
+    </plurals>
+    <string name="mis_folder_all">All images</string>
+    <string name="mis_preview">Preview</string>
+    <string name="mis_msg_no_camera">No system camera found</string>
+    <string name="mis_msg_amount_limit">Select images amount is limit</string>
+    <string name="mis_action_done">Done</string>
+    <!--<string name="mis_action_button_string"> %1$s(%2$d/%3$d, min. %4$d)</string>-->
+    <!--<string name="mis_action_button_string">%1$s(%2$d/%3$d)</string>-->
+    <string name="mis_action_button_string">%1$s (%3$d-%4$d) : %2$d</string>
+    <string name="mis_photo_unit">%1$d photos</string>
+    <string name="mis_tip_take_photo">Take photo</string>
+    <string name="mis_error_image_not_exist">Image error</string>
+    <string name="mis_error_no_permission">Has no permission</string>
+    <string name="mis_permission_dialog_title">Permission Deny</string>
+    <string name="mis_permission_dialog_ok">OK</string>
+    <string name="mis_permission_dialog_cancel">CANCEL</string>
+    <string name="mis_permission_rationale">Storage read permission is needed to pick files.</string>
+    <string name="mis_permission_rationale_write_storage">Storage write permission is needed to save the image.</string>
+    <string name="multi_image_selector_fragment__short_image">Качество фото не для печати</string>
+    <string name="promo">Промокод</string>
+    <string name="enter_promo_help">Если у вас есть промокод, пожалуйста, введите его здесь</string>
+    <string name="delivery_way">Способ доставки</string>
+    <string name="delivery_address">Адрес доставки</string>
+    <string name="city_label">ГОРОД</string>
+    <string name="street_label">УЛИЦА</string>
+    <string name="house_label">Номер дома</string>
+    <string name="flat_label">КВАРТИРА</string>
+    <string name="zip_label">ИНДЕКС</string>
+    <string name="contact_info">Контактная информация</string>
+    <string name="name">ИМЯ</string>
+    <string name="surname">ФАМИЛИЯ</string>
+    <string name="email_label">E-MAIL</string>
+    <string name="phone_label">ТЕЛЕФОН</string>
+    <string name="total">Итого</string>
+    <string name="total_label">ИТОГО К ОПЛАТЕ:</string>
+    <string name="total_cost_sample">Уже оплачено</string>
+    <string name="total_cost">%1d ₽</string>
+    <string name="total_cost_free">Бесплатно</string>
+    <string name="cost_detail_sample">Введи промокод и получи свою книжку бесплатно</string>
+    <string name="cost_detail_formatted">(%1$d ₽ фотокнига + %2$s ₽ доставка)</string>
+    <string name="cost_detail_with_promocode_srsr_delivery_formatted"> Фотокнига бесплатно. %1$s ₽ доставка</string>
+    <string name="cost_detail_with_promocode_russia_post_delivery_formatted"> Фотокнига бесплатно. Доставка бесплатно</string>
+    <string name="cost_detail_free_delivery_formatted">(%d Р фотокнига. Доставка бесплатно)</string>
+    <string name="cost_detail">(%1$f Р фотокнига + %2$f Р доставка)</string>
+    <string name="promo_code">ВВЕСТИ ПРОМОКОД</string>
+    <string name="pay_by_card">ОПЛАТА КАРТОЙ</string>
+    <string name="payment_and_delivery">Оплата и доставка</string>
+    <string name="russia_post"><Data><![CDATA[<b>Почта России <br/> Бесплатно</b><br/> (до 14 дней)]]></Data></string>
+    <string name="spsr_post"><Data><![CDATA[<b>СПСР Экспресс<br/> 300 ₽</b><br/> (до 7 дней)]]></Data></string>
+    <string name="spsr_post_formatted"><Data><![CDATA[<b>СПСР Экспресс<br/> %1$s ₽</b><br/> (%2$s дней)]]></Data></string>
+    <string name="splash_text">Сохрани впечатления\nнавсегда</string>
+    <string name="photos">Фото</string>
+    <string name="images_cropped">изображения созданы</string>
+    <string name="set_title_dialog_title">Название фотокниги</string>
+    <string name="sum">СУММА</string>
+    <string name="sum_sample">0 ₽</string>
+    <string name="album_cost_total">%d ₽</string>
+    <string name="make_order">Заказать фотокнигу</string>
+    <string name="share">Поделиться с друзьями</string>
+    <string name="connection_failed_gdrive">Не удалось загрузить файл на диск</string>
+    <string name="read_contacts_permission_desc">Вы не сможете поделиться с друзьями книгой, если не дадите разрешение</string>
+    <string name="give_access_read_contacts">Поделиться</string>
+    <string name="share_error">Что-то пошло не так</string>
+    <string name="share_message">Посмотрите мою фотокнигу, которую я создал с помощью приложения LuckyBook %1$s</string>
+    <string name="preview_screen">Предпросмотр</string>
+    <string name="progress_title">Загрузка</string>
+    <string name="progress_content">Пожалуйста, подождите</string>
+    <string name="file_not_found">Данного файла не существует</string>
+    <string name="creating_sharing_album">Создаем фотокнигу для друзей</string>
+    <string name="pdf_with_name_created">pdf создан:</string>
+    <string name="cost_error">Неверный формат суммы заказа</string>
+    <string name="choose_photobook">Выберите фотокнигу</string>
+    <string name="choose_cover">Выберите обложку</string>
+    <string name="choose_album">Фотокниги</string>
+    <string name="spsr_base_url">https://api.spsr.ru</string>
+    <string name="spsr_base_url2">http://www.cpcr.ru/</string>
+    <string name="default_country">россия</string>
+    <string name="patronymic_label">ОТЧЕСТВО</string>
+    <string name="promo_code_fragment_title">Введите промокод</string>
+    <string name="promo_code_fragment_submit">Подтвердить</string>
+    <string name="promo_code_fragment_cancel">Отмена</string>
+    <string name="service_base_url">https://staging-luckybook.herokuapp.com/</string>
+    <string name="deliver">Заказать</string>
+    <string name="next">Готово</string>
+    <string name="filters">Фильтры</string>
+    <string name="spsr_icn">1620082621</string>
+    <string name="default_city_source">набережные челны</string>
+    <string name="cost_calculation_error">Произошла ошибка при рассчете стоимости доставки</string>
+    <string name="city_field_empty_error">Поле \"Город\" не может быть пустым</string>
+    <string name="zebra_online">Зебра-онлайн</string>
+    <string name="spsr_cost_calculating_progress">Идет рассчет стоимости доставки...</string>
+    <string name="dialog_error_title">Ошибка</string>
+    <string name="dialog_ok_button">ОК</string>
+    <string name="city_not_found_error">В указанный город доставка не осуществляется. Пожалуйста, выберите другой город, либо выберите другой способ доставки</string>
+    <string name="cost_free">Бесплатно</string>
+
+    <!--covers-->
+    <string name="covers_dmb">Дембель</string>
+    <string name="covers_other">Разное</string>
+    <string name="covers_school">Выпускной</string>
+    <string name="covers_travel">Путешествия</string>
+    <string name="covers_wedding">Свадьба</string>
+    <string name="default_street_source">Московский пр-кт</string>
+    <string name="default_house_source">104а</string>
+    <string name="default_shipper_name">Ивлев Евгений Юрьевич</string>
+    <string name="fields_not_filled_error">Необходимо заполнить все поля</string>
+    <string name="page_nums">%1$d - %2$d</string>
+    <string name="birthday_label">ДАТА РОЖДЕНИЯ</string>
+    <string name="enter_album_title">Введите название фотокниги</string>
+    <string name="loading">Загрузка</string>
+    <string name="cost_info_dialog_title">Информация</string>
+    <string name="progress_album_creating">Формируем фотокнигу %1$s %%</string>
+    <string name="cost_info_dialog_content">Стоимость фотокниги составляется из:\nСтоимость обложки (%1$d руб.)\nСтоимость разворота (%2$d руб.)\n%3$d разворотов = %4$d руб.\nИтого: %5$d руб.\nЕсли у Вас возникли какие-либо вопросы или предложения, вы можете отправить их на нашу почту</string>
+
+    <string name="uploading_to_cloud">Заливаем в облако %1$s %%</string>
+    <string name="success">Готово</string>
+    <string name="success_content">Ваша фотокнига успешно загружена и вскоре будет отправлен Вам</string>
+    <string name="pdf_generation_error">Не удалось создать файл фотокниги</string>
+    <string name="request_fail">Во время обработки запроса произошла ошибка</string>
+    <string name="parse_date_error">Неверный формат даты</string>
+    <string name="positive_text">ДА</string>
+    <string name="negative_text">НЕТ</string>
+    <string name="delete_album_title">Удаление фотокниги</string>
+    <string name="delete_album_content">Вы уверены, что хотите удалить фотокнигу %1$s?</string>
+    <string name="attention">Внимание!</string>
+    <string name="need_to_cancel_background_task_before">Чтобы продолжить необходимо остановить другие операции. Остановить их?</string>
+    <string name="stop">Остановить</string>
+    <string name="my_albums">Мои фотокниги</string>
+    <string name="change_picture">Заменить изображение</string>
+    <string name="delete_picture">Удалить</string>
+    <string name="replace">Заменить</string>
+    <string name="change">Изменить</string>
+    <string name="change_picture_sure">Заменить изображение на другое?</string>
+    <string name="delete_picture_sure">Удалить изображение?</string>
+    <string name="delivery_info_title">Способ доставки</string>
+    <string name="delivery_info_content">Доставка с помощью СПСР временно недоступна. Приносим извинения за неудобства</string>
+    <string name="order_ready_title">Поздравляем!\nВаша книга отправлена!</string>
+    <string name="new_album">Новая фотокнига</string>
+    <string name="to_album_list">Мои фотокниги</string>
+    <string name="sorry">Приносим свои извинения!</string>
+    <string name="only_promo_for_now">В данный момент нет возможности заказать эту фотокнигу.\n
+Ждите обновления.</string>
+
+    <string name="delete">Удалить</string>
+    <string name="templates">Коллажи</string>
+    <string name="some_error">Что-то пошло не так</string>
+    <string name="delete_album_error">Произошла ошибка при удалении фотокниги</string>
+    <string name="promo_code_send_error">Введен неверный промокод</string>
+    <string name="promo_code_incorrect_error">Введен неверный промокод</string>
+    <string name="connection_error">Необходимо подключиться к сети для загрузки фотокниги</string>
+    <string name="dialog_neutral_mail">Написать на почту</string>
+    <string name="customer_email">lucky.book@yandex.ru</string>
+    <string name="email_subject">Вопросы и предложения LuckyBook</string>
+    <string name="promo_code_connection_error">Произошла ошибка сети</string>
+    <string name="feedback_info"><Data><![CDATA[Если у вас возникли какие-либо вопросы или предложения, вы можете отправить их на почту: <u><font color="blue">lucky.book@yandex.ru</font></u>]]></Data></string>
+    <string name="album_not_filled_message">Фотокнига заполнена не полностью. Добавьте недостающие фотографии</string>
+    <string name="album_not_filled">Не выбраны фотографии</string>
+    <string name="dropbox_upload_error">Произошла ошибка при попытке загрузить альбом. Попробуйте еще раз</string>
+    <string name="help">Помощь</string>
+    <string name="got_it">Понял</string>
+    <string name="first_change_scale_run">Чтобы заменить фотографию нажмите на нее.\n
+        Для увеличения\\уменьшения сводите или разводите два пальца</string>
+    <string name="template_photos">%1$d фото</string>
+    <string name="invalid_picture_size">Не для печати</string>
+    <string name="invalid_pictures_for_template">Изображения на этой странице не подходят для выбранного шаблона. Удалите их перед сменой шаблона</string>
+    <string name="facebook_app_id">1841214429459894</string>
+    <string name="facebook_login_title">Facebook</string>
+    <string name="facebook_login_content">Авторизация прошла успешно</string>
+    <string name="vk_photos_fragment__title">VK</string>
+    <string name="social_net_auth">Авторизоваться</string>
+    <string name="facebook_photos_fragment__title">Facebook</string>
+    <string name="instagram_photos_fragment__title">Instagram</string>
+    <string name="instagram_base_url">https://instagram.com/</string>
+    <string name="instagram_auth_error">Произошла ошибка</string>
+    <string name="social_photo_load_error">Произошла ошибка при попытке загрузить фотографий</string>
+    <string name="instagram_auth_directly">Пожалуйста, авторизуйтесь через аккаунт Instagram</string>
+    <string name="local_selector_fragment__title">Галерея</string>
+    <string name="select_images_title">Выберите фото</string>
+    <string name="allow">Разрешить</string>
+    <string name="download_images_error">Произошла ошибка при загрузке</string>
+    <string name="download_some_images_error">Не удалось загрузить %1$d фотографий. Попробуйте еще раз или выберите другие фотографии</string>
+    <string name="downloading">Загрузка из сети</string>
+    <string name="error_loading_file">Не удалось загрузить изображение</string>
+    <string name="instagram_auth">Авторизоваться</string>
+
+    <string name="yandex_money_payment_success">Платеж прошел</string>
+    <string name="yandex_money_payment_fail">Платеж не прошел</string>
+    <string name="create_invoice_error">Произошла ошибка при создании заявки на доставку</string>
+    <string name="full_address_tempalte">%1$s, г. %2$s, ул. %3$s, д. %4$s, кв. %5$s</string>
+    <string name="order_alert_title">Информация</string>
+    <string name="order_alert_content">Внимание! При согласии начнется формирование и загрузка фотокниги. Этот процесс может занять некоторое время. Для экономии трафика рекомендуем подключиться к сети Wi-fi</string>
+    <string name="go_to_order">Перейти к заказу</string>
+    <string name="order_later">Позже</string>
+    <string name="order_alert_error_title">Ошибка загрузки</string>
+    <string name="order_alert_error_network_content">Похоже, Вы не подключены к сети. Загрузка альбома невозможна. Подключитесь к сети и попробуйте снова</string>
+    <string name="retry">Повторить</string>
+    <string name="ok">Ок</string>
+    <string name="uploading_progress">Загрузка: %1$s/%2$s МБ</string>
+    <string name="ready">Готово</string>
+    <string name="crop">Обрезать</string>
+    <string name="titleLoadImage">Загружаем обложку</string>
+    <string name="download_error">Произошла ошибка, попробуйте еще раз</string>
+    <string name="search_by_code">Промокод</string>
+    <string name="error_not_delivery">Exception occurred during invocation of web service.</string>
+    <string name="dialog_title_check_promo_code">Промокод</string>
+    <string name="dialog_hint_check_promo_code">Введите промо-код</string>
+    <string name="dialog_check_promo_code_positive_button">Ок</string>
+    <string name="dialog__check_promo_code_negative_button">Отмена</string>
+    <string name="text_start_create">Начать</string>
+    <string name="title_activity_pages">Страницы</string>
+    <string name="text_repeat">Повторить</string>
+    <string name="text_error_request_price">Произошла ошибка при запросе цены</string>
+    <string name="text_promo_code_not_found">Промо-код не найден</string>
+    <string name="info">Справка</string>
+    <string name="swapping_pages">Переставить местами</string>
+    <string name="os_text">android</string>
+    <string name="upload_done">Загружено 100%</string>
+    <string name="downloading_text">Загрузка</string>
+    <string name="ordered_text">Заказано</string>
+    <string name="text_error_request_list_cover">Не удалось загрузить обложки</string>
+    <string name="text_in_queue">В очереди</string>
+    <string name="price_pattern">%s ₽</string>
+    <string name="pay_text">Оплачено</string>
+    <string name="text_editing_not_available">Редактирование возможно только после полного оформления текущего заказа</string>
+    <string name="text_about_book">Подробнее о фотокниге</string>
+    <string name="text_info_1">Продолжить?</string>
+    <string name="text_info_0">Редактирование фотокниги будет не доступно до окончания заказа;
+
+В процессе оформления Вам будет предложено оплатить фотокнигу с помощью сервиса электронных платежей  - Яндекс.Деньги. Оплата  принимается банковскими картами (VISA, MasterCard, Maestro). Комиссия 0%. Обработка платежей осуществляется сервисом  Яндекс.Деньги;
+
+Доставка — СПСР и Почта России;</string>
+    <string name="text_about_payment_and_delivery">Подробнее об оплате и доставке</string>
+    <string-array name="instruction_labels">
+        <item>Удобный сервис\nдля создания фотокниг!</item>
+        <item>Выбери фотографии из\nгалереи или социальных сетей</item>
+        <item>Создай коллаж\nи редактируй фотографии</item>
+        <item>Меняй порядок\nрасположения фотографий</item>
+        <item>Выбирай темы и обложки</item>
+        <item>Посмотри готовый альбом\nнажав на обложку</item>
+        <item>Выбери тип доставки и оплати\nфотокнигу любым способом</item>
+        <item>Получи фотокнигу в почтовом\nотделении либо курьером</item>
+    </string-array>
+    <string name="instruction_last_page">
+        — 20 x 20 см\n— панорамные страницы\n— твердая обложка\n— качественная печать
+    </string>
+    <string name="text_info">Информация</string>
+    <string name="album_name_found">Фотокнига \"%s\" найдена</string>
+    <string name="text_wait_for_download_information">Дождитесь загрузки информации о стоимости</string>
+    <string name="text_button_delete_page">Удалить страницу</string>
+    <string name="text_button_delete_image">Удалить фотографию</string>
+    <string name="delete_page_title">Удаление страницы</string>
+    <string name="delete_page_message">Удалить страницу?</string>
+    <string name="warning_title">Предупреждение</string>
+    <string name="title_back_message">В случае ухода альбом не сохраниться</string>
+    <string name="yes">Да</string>
+    <string name="message_change_template">При изменении страницы, фотографии будут удалены. Продолжить?</string>
+    <string name="message_max_and_min_count">Количество разворотов должно быть от 5 до %d</string>
+    <string name="text_info_swap_images">Удерживайте и перетаскивайте страницы для\nизменения из расположения в альбоме</string>
+    <string name="text_multiselect_images1">Фотографии с желтой отметкой (</string>
+    <string name="text_multiselect_images2">) только для коллажа</string>
+    <string name="text_please_wait">Пожалуйста подождите</string>
+    <string name="text_progress_download_images">Идет  загрузка фотографий</string>
+    <string name="text_click_double_click">Please click BACK again to exit</string>
+    <string name="text_progress_album_uploading">Дождитесь загрузки</string>
+    <string name="text_min_spread_count_error">У вас сейчас %1$d разворот%2$s. Нужно минимум %3$d. Добавьте еще фотографий</string>
+    <string name="text_not_connection">Для покупки книги и выбора обложки необходимо подключиться к интернету</string>
+    <string name="text_question_want_change_cover">Хотите поменять обложку фотокниги?</string>
+    <string name="text_info_text">Уважаемый пользователь! Если ты создал свою фотокнигу и пока не можешь ее оплатить, не спеши удалять фотографии, которые содержатся в ней, со своего телефона! Это приведет к удалению фотокниги! Если ты все же удалил, и тебе нужна эта фотокнига, свяжись с нами по почте lucky.book@yandex.ru</string>
+    <string name="text_sed_mail">Отправить письмо</string>
+    <string name="text_this_photo_selected">Данная фотография уже выбрана</string>
+    <string name="not_delivery_spsr">-- ₽</string>
+    <string name="text_please_again">Пожалуйста, попробуйте позже</string>
+</resources>

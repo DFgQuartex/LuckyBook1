@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <fraction name="leaf_aspect_ratio">200%</fraction> <!-- book_width /book_height -->
+    <dimen name="padding_action_swap_and_add">25dp</dimen>
+    <dimen name="page_sheet_layout_elevation">16dp</dimen>
+    <dimen name="page_toolbar_elevation">20dp</dimen> <!-- page_sheet_layout_elevation + 4dp -->
+    <dimen name="page_book_elevation">26dp</dimen> <!-- page_sheet_layout_elevation + 10dp -->
+
+    <dimen name="mis_image_size">96dp</dimen>
+    <dimen name="mis_space_size">2dp</dimen>
+    <dimen name="mis_folder_cover_size">72dp</dimen>
+    <dimen name="text_label_margin">24dp</dimen>
+    <dimen name="double_text_label_margin">48dp</dimen>
+    <dimen name="label_text_size">14sp</dimen>
+    <dimen name="double_label_text_size">32sp</dimen>
+
+
+    <dimen name="view_margin">8dp</dimen>
+    <dimen name="twice_view_margin">16dp</dimen>
+    <dimen name="half_view_margin">1dp</dimen>
+    <dimen name="switch_text_margin">15dp</dimen>
+    <dimen name="default_big_text_size">20sp</dimen>
+    <dimen name="choose_cover_width">153dp</dimen>
+    <dimen name="choose_cover_height">212dp</dimen>
+    <dimen name="choose_promo_cover_height">150dp</dimen>
+    <dimen name="bottom_recycler_height">160dp</dimen>
+    <dimen name="preview_width">128dp</dimen>
+    <dimen name="preview_height">64dp</dimen>
+    <dimen name="preview_height2">100dp</dimen>
+
+    <dimen name="album_list_text_size">26sp</dimen>
+    <dimen name="fab_border_width_fix">0dp</dimen>
+    <dimen name="order_ready_title_size">20sp</dimen>
+    <dimen name="album_preview_width">200dp</dimen>
+    <dimen name="album_preview_height">276dp</dimen>
+    <dimen name="order_ready_screen_margin">40dp</dimen>
+    <dimen name="small_btn_size">24dp</dimen>
+    <dimen name="image_size">124dp</dimen>
+    <dimen name="image_crop_size">92dp</dimen>
+</resources>
