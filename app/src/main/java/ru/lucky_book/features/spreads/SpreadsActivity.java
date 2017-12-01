@@ -130,6 +130,7 @@ public class SpreadsActivity extends SpiceActivity implements OnItemClickListene
         initData(savedInstanceState);
         setContentView(R.layout.activity_spreads);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorAccent));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Альбом");

@@ -9,7 +9,6 @@
         android:id="@+id/toolbar"
         style="@style/toolbar_style"/>
 
-
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
@@ -127,7 +126,7 @@
         android:id="@+id/bottom_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/bottom_recycler_height"
-        android:background="@color/spreads_background"
+        android:background="@color/colorLayoutBackground"
         android:gravity="center_vertical"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal" />
 </LinearLayout>

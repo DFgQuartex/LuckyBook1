@@ -7,6 +7,7 @@
     <color name="colorTextPrimary">#212121</color>
     <color name="colorTextSecondary">#757575</color>
     <color name="colorDivider">#BDBDBD</color>
+    <color name="colorLayoutBackground">#006df0</color>
     <color name="colorButtonPressed">#303F9F</color>
     <color name="colorButton">#3F51B5</color>
     <color name="colorSwitch">#CCCCCC</color>
